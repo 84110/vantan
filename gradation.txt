@@ -1,0 +1,7 @@
+size(270,20);
+colorMode(HSB,255);
+int i;
+for(i = 0; i <255; i += 5){
+  fill(i,255,255);
+  ellipse(i+10,10,10,10);
+}
