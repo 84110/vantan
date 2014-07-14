@@ -20,8 +20,8 @@ void mousePressed(){
 }
 
 void mouseDragged(){
-      //if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
+      if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
       x = mouseX + mx;
       y = mouseY + my;
-      //}
+      }
   }
