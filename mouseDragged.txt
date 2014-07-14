@@ -1,27 +1,30 @@
+float x;
+float y;
+
 void setup(){
 size(500,500);
+x = 150;
+y = 150;
 }
 
-int x = 150;
-int y = 150;
-int mx;
-int my;
+float mx;
+float my;
 
 void draw(){
   background(255);
-  ellipse(x, y, 100, 100);
+  ellipse(x, y, 200, 200);
   }
 
 void mousePressed(){
-  if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
+  if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 100 * 100){
       mx = x - mouseX;
       my = y - mouseY;
       }
 }
 
 void mouseDragged(){
-      if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
+      if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 100 * 100){
       x = mouseX + mx;
       y = mouseY + my;
       }
-  }
+}
