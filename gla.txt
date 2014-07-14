@@ -1,0 +1,56 @@
+int x = 0;
+int x2 = 0;
+int x3 = 0;
+int gla=0;
+
+void setup(){
+  size(500,300);
+  colorMode(HSB,255);
+}
+
+void draw(){
+  //background(255);
+  fill(gla,250,255);  
+  ellipse(x,20,30,30); 
+  fill(gla,150,255);
+  ellipse(x2,50,30,30); 
+  fill(gla,50,255);
+  ellipse(x3,80,30,30);
+  fill(gla,250,255);  
+  ellipse(x2,110,30,30); 
+  fill(gla,150,255);
+  ellipse(x3,140,30,30); 
+  fill(gla,50,255);
+  ellipse(x,170,30,30);
+  fill(gla,250,255);  
+  ellipse(x3,200,30,30); 
+  fill(gla,150,255);
+  ellipse(x,230,30,30); 
+  fill(gla,50,255);
+  ellipse(x2,260,30,30);
+  
+   x++;
+  if(x > 530){
+  x = 0;
+  }
+  
+  x2 += 2;
+  if(x2 > 530){
+  x2 = 0;
+  }
+  
+  x3 += 3;
+  if(x3 > 530){
+  x3 = 0;
+  }
+  
+  gla += 1;
+  if(gla>255){
+    gla=0;
+  }
+  if(keyPressed){
+    if(key == 'x'){
+    background(255);
+    }
+  }
+}

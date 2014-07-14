@@ -1,0 +1,27 @@
+void setup(){
+size(500,500);
+}
+
+int x = 150;
+int y = 150;
+int mx;
+int my;
+
+void draw(){
+  background(255);
+  ellipse(x, y, 100, 100);
+  }
+
+void mousePressed(){
+  if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
+      mx = x - mouseX;
+      my = y - mouseY;
+      }
+}
+
+void mouseDragged(){
+      //if((x - mouseX)*(x - mouseX)+(y - mouseY)*(y - mouseY) <= 50 * 50){
+      x = mouseX + mx;
+      y = mouseY + my;
+      //}
+  }

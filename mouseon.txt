@@ -1,0 +1,19 @@
+void setup(){
+  size(300,300);
+}
+
+void draw(){
+  background(255);
+  fill(255); 
+  if((mouseX - 175 + 25) * (mouseX - 175 + 25) + 
+    (mouseY - 175 + 25) * (mouseY - 175 + 25) <= 25 * 25){
+    fill(255,0,0);
+      }else{
+      fill(255,255,255);
+      }
+      ellipse(150,150,50,50);
+   
+   fill(0);   
+ text(mouseX,10,20);
+ text(mouseY,10,40);
+}
